@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    background-color: rgb(233, 233, 233);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    border-right: 1px black solid;
+    background-color: rgb(179, 179, 179);
+}
+
+#navbar header {
+    text-align: center;
+    padding: 0.5em 0 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#navbar ul li {
+    
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    padding: 1em;
+    border-top: black 0.5px solid;
+}
+
+#main-doc {
+    width: 75%;
+    margin: 2em 2em 2em 30%;
+
+
+}
+
+.pre {
+    padding: 2em;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(0, 177, 0);
+    font-weight: bold;
+    width: auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+code::before {
+    content: "~# "
+}
+
+header {
+    font-size: 2em;
+}
+
+.main-section > p, .main-section li {
+    margin: 2em;
+    color: rgb(83, 83, 83);
+}
+
+.main-section > header {
+    margin-left: -0.25em;
+    margin: 1em 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+    }
+    #navbar ul {
+        height: 5em;
+        overflow: auto;
+        border: 1px black solid;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin: 2em;
+    }
+}
